@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //        1. A developer expects isLoggedIn to be accessible only inside the if block, but it leaks outside.
+        // Fix the code.
+
+        // if (true) {
+        //     let isLoggedIn = true;
+        // }
+        // console.log(isLoggedIn);
+
+        // Ans:ReferenceError
+
+        // 2.The following function creates an accidental global variable.Refactor it safely.
+
+        // let data;
+
+        // function save() {
+        //     data = "saved";
+        // }
+
+        // 3.Refactor this code to prevent reassignment bugs.
+
+        // let TAX_RATE = 18;
+        // TAX_RATE = 20;
+
+        // Ans:tyep error
+
+        // 4.This code throws an error. Fix it without changing logic.
+
+        // console.log(count); 
+        // let count = 5;
+        // Ans:TDZ error
+
+        // let count = 5;
+        // console.log(count);
+        // Ans:5
+
+        // 5.The developer expects price from global scope but gets an error. Fix it.
+
+        // let price = 100;
+
+        // function calculate() {
+        //     console.log(price);
+        //     let price = 200;
+        // }
+        // calculate();
+
+        // Ans:ReferenceError
+
+        // ----shadowing-----
+
+        // let price = 100;
+
+        // function calculate() {
+        //     console.log(price); // ✅ 100
+        // }
+        // calculate();
+        // Ans:100
+
+        // 6.Fix the loop so it prints 0 1 2 asynchronously.
+
+        // for (let i = 0; i < 3; i++) {
+        //     setTimeout(() => console.log(i), 0);
+        // }
+        // Ans:0 1 2
+
+        // 7.Prevent accidental reassignment of config.
+
+        // const config = {
+        //     api: "/users"
+        // };
+
+        // 8.This code crashes in strict mode. Fix it.
+
+        // let user = "Admin";
+
+        // {
+        //     let user = "Guest";
+        //     console.log(user); 
+        // }
+
+        // console.log(user); 
+
+        // Ans:Guest,Admin
+
+        // 9.Fix the TDZ issue in this conditional check.
+
+        // if (true) {
+        //     console.log(status); 
+        //     let status = "active";
+        // }
+
+        // Ans:TDZ error
+
+        // if (true) {
+        //     let status = "active";
+        //     console.log(status);
+        // }
+
+        // Ans:active
+
+        // 10.Refactor this legacy code using best practices.
+
+        // let total = 0;
+
+        // if (true) {
+        //     total = 100;
+        // }
+        // const total = true ? 100 : 0;
+
+        // 11.Choose the best keyword for MAX_USERS.
+
+        // const MAX_USERS = 100;
+
+        // 12.Prevent count from leaking outside the function.
+
+        // function increment() {
+        //     let count = 1;
+        // }
+
+
+        // 13.Improve readability and safety.
+
+        // const score = 10;
+        // let score = 10;
+        // score = 20;
+
+        // 14.Why does this crash and how to fix it?
+
+
+        // function test() {
+        //     console.log(x); 
+        //     let x = 5;
+        // }
+        // Ans:ReferenceError
+
+        // function test() {
+        //     let x;
+        //     x = 5;
+        //     console.log(x);
+        // }
+
+
+        // 15.Write a rule for variable declaration in modern JS projects.
+
+        // Rule: Always use const by default. Use let only when reassignment is required. Never use var.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

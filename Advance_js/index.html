@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+</head>
+
+<body>
+    <script>
+        // 1.What will be the output of the following code when accessed before variable initialization using var?
+
+        // console.log(myVariable);
+        // var myVariable = 10;
+        // console.log(myVariable);
+
+
+        // 2.What happens when a variable declared with let is accessed before initialization ?
+
+        // console.log(myVariable); 
+        // let myVariable = "Hello, world!";
+
+
+        //    3.Can a variable declared with let inside a block be accessed outside that block?
+
+        // {
+        //     let blockScopedVariable = "Hello";
+        //     console.log(blockScopedVariable);
+        // }
+        // console.log(hello);
+
+
+        // 4.Is a variable declared using var inside a function accessible outside the function?
+
+        // function test() {
+        //     var y = 10;
+        // }
+        // test();
+        // console.log(y);
+
+        // 5.How does JavaScript resolve a variable that is not found in the local scope?
+
+        // let a = 2;
+        // function foo() {
+        //     console.log(a);
+        // }
+        // foo();
+
+        // 6.What happens when a variable with the same name exists in both inner and outer scopes?
+
+        // let x = 10;
+        // function test() {
+        //     let x = 20;
+        //     console.log(x);
+        // }
+        // test();
+        // console.log(x);
+
+        // 7. Can a function declared using the function keyword be called before its definition?
+
+        // function sayHi() {
+        //     console.log("Hi");
+        // }
+
+        // sayHi();
+
+
+        // 8.What happens when a function expression assigned to var is called before assignment?
+
+        // var sayHello;
+
+        // sayHello();
+
+        // sayHello = function () {
+        //     console.log("Hello");
+        // };
+
+
+        // 9.What error occurs when a let variable is accessed inside its own block before initialization?
+
+        // {
+        //     console.log(a);
+        //     let a = 10;
+        // }
+
+        // 10.What will be the output when the same inner function is called multiple times after the outer function has executed?
+
+        // function outer() {
+        //     let count = 0;
+        //     return function () {
+        //         count++;
+        //         return count;
+        //     };
+        // }
+
+        // const fn = outer();
+
+        // console.log(fn());
+        // console.log(fn()); 
+
+
+        // 11.Do separate executions of a function create independent closures?
+
+        // function makeFn() {
+        //     let x = 1;
+        //     return function () {
+        //         return x++;
+        //     };
+        // }
+
+        // const a = makeFn();
+        // const b = makeFn();
+
+        // console.log(a());
+        // console.log(b());
+
+
+        // 12.What happens when a variable is assigned without any declaration keyword?
+
+        // function test() {
+        //     x = 100; 
+        // }
+        // test();
+        // console.log(x);
+
+        // 13.Does var respect block-level scope?
+
+        // if (true) {
+        //     var a = 10;
+        // }
+        // console.log(a);
+
+
+        // 14.What happens when a block-scoped variable shadows an outer variable and is accessed before initialization?
+
+        // let a = 5;
+        // function test() {
+        //     console.log(a);
+        //     let a = 10;
+        // }
+        // test();
+
+        // 15.What error is thrown when JavaScript cannot find a variable in any scope?
+
+        // function test() {
+        //     console.log(x);
+        // }
+        // test();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -10,7 +10,6 @@
             width: 250px;
             height: 200px;
             border: 2px solid black;
-            border-radius: 20px;
             text-align: center;
             font-size: 50px;
         }
@@ -21,31 +20,126 @@
 <body>
 
     <button id="btnclick">click</button>
-    <button></button>
+    <button id="btndoubleclick">double click</button>
+    <button id="btnMouseUp">Mouse Up</button>
+    <button id="btnMouseDown">Mouse Down</button>
+    <button id="btnMouseOver">Mouse Over</button>
+    <button id="btnMouseLeave">Mouse Leave</button>
+
+    <hr>
 
 
-
-
-
-
-
-
-
-
-
-
+     <input type="text"  id="inpData">
+    <hr>
+    <input type="text"  id="inputData">
+    <hr>
+    <input type="text"  >
+    <hr>
 
      <div class="box" id="box">Events</div>
 
+    <!-- <script>
+       
+       let box = document.getElementById("box");
+
+
+        btnClick.addEventListener("click", function () {
+        box.style.backgroundColor = "blue";
+      });
+
+      btndbleclick.addEventListener("dblclick", function () {
+        box.style.backgroundColor = "red";
+      });
+
+      btnMouseUp.addEventListener("mouseup", function () {
+        box.style.backgroundColor = "green";
+      });
+
+      btnMouseDown.addEventListener("mousedown", function () {
+        box.style.backgroundColor = "brown";
+      });
+
+      btnMouseOver.addEventListener("mouseover", function () {
+        box.style.backgroundColor = "purpal";
+      });
+
+      btnMouseLeave.addEventListener("mouseleave", function () {
+        box.style.backgroundColor = "yellow";
+      });
+
+
+
+
+
+
+
+    </script> -->
+
     <script>
-        let box = document.getElementById("box");
+      let box = document.getElementById("box");
+
+      btnclick.addEventListener("click", function () {
+        box.style.backgroundColor ="red";
+      })
+
+      btndoubleclick.addEventListener("dblclick", function () {
+        box.style.backgroundColor = "green";
+      })
+
+      btnMouseUp.addEventListener("mouseup", function () {
+        box.style.backgroundColor = "yellow";
+      })
+
+      btnMouseDown.addEventListener("mousedown", function () {
+        box.style.backgroundColor = "pink";
+      })
+
+      btnMouseOver.addEventListener("mouseover", function () {
+        box.style.backgroundColor = "grey";
+      })
+
+       btnMouseLeave.addEventListener("mouseleave", function () {
+        box.style.backgroundColor = "brown";
+      })
+
+
+
+        // keyboard
+
+        inpData.addEventListener("keypress", function () {
+        box.style.backgroundColor = "blue";
+      })
+
+
+      inputData.addEventListener("keyup", function () {
+        box.style.backgroundColor = "grey";
+      })
+
+
+      inputData.addEventListener("blur", function (e) {
+        console.log(e.target.value);
+        
+      })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
     </script>
-
 </body>
 
 </html>
