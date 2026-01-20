@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //         1.A developer assumes this inside a normal function refers to the function itself.
+        //         Fix the code so this correctly refers to the intended object.
+
+        // const person = {
+        //     name: "Anjali"
+        // };
+
+        // function show() {
+        //     console.log(this.name);
+        // }
+
+        // show.call(person);
+
+        // Ans:Anjali
+
+
+        // 2.The method loses its this reference. Fix it.
+
+        // const user = {
+        //     name: "Jay",
+        //     greet() {
+        //         setTimeout(() => {
+        //             console.log(this.name);
+        //         }, 1000);
+        //     }
+        // };
+
+        // user.greet();
+
+        // Ans:jay
+
+
+        // 3.Calling the extracted method prints undefined. Fix it.
+
+        // const user = {
+        //     name: "Jay",
+        //     getName() {
+        //         return this.name;
+        //     }
+        // };
+
+        // const fn = user.getName;
+        // fn();
+
+
+        // 4.Ensure this refers to the clicked button.
+
+        // button.addEventListener("click", function () {
+        //     console.log(this);
+        // });
+
+        // Ans:ReferenceError
+
+
+        // 5.Inner function loses access to object context. Fix it.
+
+        // const user = {
+        //     name: "Jay",
+        //     greet() {
+        //         const inner = () => {
+        //             console.log(this.name);
+        //         };
+        //         inner();
+        //     }
+        // };
+
+
+        // 6.Ensure correct this without arrow functions.
+
+        // setTimeout(function () {
+        //     console.log(this.name); 
+        // }, 1000);
+
+
+        // 7.The developer forgot new. Fix object creation.
+
+        // function User(name) {
+        //     if (!(this instanceof User)) {
+        //         return new User(name);
+        //     }
+        //     this.name = name;
+        // }
+        // const u = User("Jay");
+
+
+        // 8.Which function type should be used for object methods?
+
+        // const user = {
+        //     name: "Anjali",
+        //     greet() {
+        //         console.log(this.name);
+        //     }
+        // };
+
+        // user.greet(); 
+
+        // Ans:Anjali
+
+
+        // 9.Fix context loss when passing method as callback.
+
+        // setTimeout(user.getName, 1000); 
+
+        // 10.Call the function with explicit context.
+
+        // const user = {
+        //     name: "Anjali"
+        // };
+
+        // function greet(city) {
+        //     console.log(this.name, city);
+        // }
+
+        // greet.call(user, "Ahmedabad");
+
+        // Ans:Anjali Ahmedabad
+
+
+        // 11.Invoke function using arguments array.
+
+        // const user = {
+        //     name: "Jay"
+        // };
+
+        // function greet(city) {
+        //     console.log(this.name, city);
+        // }
+
+        // greet.apply(user, ["Mumbai"]);
+
+
+        // 12.Create a reusable function with fixed this.
+
+        // const user = {
+        //     name: "Jay"
+        // };
+
+        // function greet(city) {
+        //     console.log(this.name, city);
+        // }
+
+        // const greetUser = greet.bind(user);
+
+        // greetUser("Delhi");
+
+        // 13.Why does this log undefined?
+
+        // const obj = {
+        //     name: "Jay",
+        //     arrow() {
+        //         console.log(this.name);
+        //     }
+        // };
+
+
+        // 14.Fix the method so it prints the object name.
+
+        // const obj = {
+        //     name: "Jay",
+        //     show() {
+        //         console.log(this.name);
+        //     }
+        // };
+
+        // obj.show();
+
+
+        // 15.Choose the best approach to avoid this bugs in callbacks.
+
+        // setTimeout(function () {
+        //     console.log(this.name); 
+        // }, 1000);
+
+    </script>
+</body>
+</html>

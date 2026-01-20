@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.The array copy mutates the original. Fix it.
+        // const copy = [...original];
+        // copy.push(4);
+
+        // 2.Merge two arrays without mutation.
+        // const merged = [...arr1, ...arr2];
+
+        // 3.Accept unlimited arguments in a function.
+        // function sum(...args) {
+        //     return args.reduce((total, n) => total + n, 0);
+        // }
+
+        // 4.Avoid mutating original object.
+
+        // const user = { name: "Anjali", age: 22 };
+
+        // const updatedUser = { ...user, age: 23 };
+
+        // console.log(user);   
+        // console.log(updatedUser); 
+
+
+        // 5.Extract name and age from object.
+
+        // const user = { name: "Jay", age: 25 };
+
+        // const { name, age } = user;
+
+        // console.log(name); 
+        // console.log(age); 
+        // Ans: Jay , 25
+
+
+        // 6.Rename name to userName.
+
+        // const user = { name: "Jay", age: 25 };
+
+        // const { name: userName } = user;
+
+        // console.log(userName); 
+        // Ans:Jay
+
+
+        // 7.Set default for missing property.
+
+        // const user = { name: "Anjali", age: 23 };
+
+        // const { role = "user" } = user;
+
+        // console.log(role);
+
+        // Ans:user
+
+
+        // 8.Extract first two elements.
+
+        // const arr = [10, 20, 30];
+        // const [a, b] = arr;
+
+        // console.log(a, b); 
+
+        // Ans:10,20 
+
+
+        // 9.Skip first element.
+
+        // const arr = [10,20,30];
+        // const [,b] = arr;
+
+        // console.log(b);
+        // Ans:20
+
+
+        // 10.Swap a and b without temp variable.
+
+        // let a = 1;
+        // let b = 2;
+
+        // [a, b] = [b, a];
+
+        // console.log(a); 
+        // console.log(b); 
+
+        // Ans:2,1
+
+
+        // 11.Extract city from nested object.
+
+        // const person = {
+        //     info: {
+        //         city: "Delhi"
+        //     }
+        // };
+
+        // const { info: { city } } = person;
+
+        // console.log(city);
+
+        // Ans:Delhi
+
+
+        // 12.Destructure directly in parameters.
+
+        // const user = { name: "Jay", age: 25 };
+
+        // greet(user);
+
+
+        // 13.Extract id and collect rest.
+
+        // const user = { id: 1, name: "Jay", age: 25 };
+
+        // const { id, ...rest } = user;
+
+        // console.log(id);  
+        // console.log(rest);
+
+        // Ans:1 , { name: "Jay", age: 25 }
+
+
+
+        // 14.Which operator collects multiple values into one?
+
+        // function logAll(...values) {
+        //     console.log(values);
+        // }
+
+        // logAll(1, 2, 3);
+       
+        //      Ans: [1, 2, 3]
+
+
+        // 15.Which feature improves readability and avoids mutation?
+
+        // Ans: Destructuring
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
