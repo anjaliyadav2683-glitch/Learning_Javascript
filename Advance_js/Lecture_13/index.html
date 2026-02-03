@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <script>
+        // Task 1: Convert Promise to Async/Await
+        // function getData() {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(() => {
+        //             resolve("Data received");
+        //         }, 2000);
+        //     });
+        // }
+
+        // async function fetchData() {
+        //     try {
+        //         const result = await getData();  
+        //         console.log(result);
+        //     } catch (error) {
+        //         console.log(error);
+        //     }
+        // }
+
+        // fetchData();
+
+
+
+        // Task 2: First Async Function
+        // async function greet() {
+        //     return "Hello World";
+        // }
+
+        // greet().then(console.log);
+
+
+
+        // Task 3: Sequential Await
+        // function task1() {
+        //     return new Promise(resolve => {
+        //         setTimeout(() => {
+        //             resolve("Task 1 completed");
+        //         }, 2000);
+        //     });
+        // }
+
+        // function task2() {
+        //     return new Promise(resolve => {
+        //         setTimeout(() => {
+        //             resolve("Task 2 completed");
+        //         }, 1000);
+        //     });
+        // }
+
+        // async function runTasks() {
+        //     console.log("Starting tasks...");
+
+        //     const result1 = await task1();   
+        //     console.log(result1);
+
+        //     const result2 = await task2();   
+        //     console.log(result2);
+
+        //     console.log("All tasks done!");
+        // }
+
+        // runTasks();
+
+
+        // Task 4: Async with setTimeout
+        // async function runTask() {
+        //     console.log("Start");
+
+        //     const message = await delay(2000); 
+
+        //     console.log(message);
+        //     console.log("End");
+        // }
+
+        // runTask();
+
+
+
+        // Task 5: Fetch Data Using Async/Await
+        // async function loadOrders() {
+        //     try {
+        //         const userRes = await fetch("/api/user");
+        //         const user = await userRes.json();
+
+        //         const orderRes = await fetch(`/api/orders/${user.id}`);
+        //         const orders = await orderRes.json();
+
+        //         console.log(orders);
+        //     } catch (error) {
+        //         console.error(error);
+        //     }
+        // }
+        // loadOrders();
+
+
+
+        // Task 6: JSON Parsing
+        // async function fetchUsers() {
+        //     try {
+        //         const response = await fetch("/api/user");
+
+        //         const data = await response.json();
+
+        //         console.log("Users data:", data);
+        //     } catch (error) {
+        //         console.log("Error fetching data:", error);
+        //     }
+        // }
+
+        // fetchUsers();
+
+
+        // Task 7: Error Handling with try/catch
+        // async function fetchUsers() {
+        //     try {
+        //         const res = await fetch("/api/users");
+
+        //         if (!res.ok) {
+        //             throw new Error("Failed to fetch users");
+        //         }
+
+        //         const users = await res.json();
+        //         return users;
+        //     } catch (err) {
+        //         console.error(err.message);
+        //     }
+        // }
+        // fetchUsers();
+
+
+        // Task 8: Parallel API Calls
+        // async function parallel() {
+        //     const [a, b] = await Promise.all([taskA(), taskB()]);
+        //     return [a, b];
+        // }
+
+
+        // Task 10: Async Function Reusability
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

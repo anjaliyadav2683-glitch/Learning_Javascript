@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <script>
+        // 1. Email Validator (test)
+        // function isValidEmail(email) {
+        //     if (!email || typeof email !== "string") {
+        //         return false;
+        //     }
+
+        //     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        //     return emailRegex.test(email);
+        // }
+
+
+        // 2. Phone Number Check
+        // function isValidPhone(number) {
+        //     if (!number || typeof number !== "string") {
+        //         return false;
+        //     }
+
+        //     const phoneRegex = /^\d{10}$/;
+
+        //     return phoneRegex.test(number);
+        // }
+
+
+        // 3. Username Rule Checker
+        // function isValidUsername(username) {
+        //     if (!username || typeof username !== "string") {
+        //         return false;
+        //     }
+
+        //     const usernameRegex = /^[A-Za-z0-9]{5,}$/;
+
+        //     return usernameRegex.test(username);
+        // }
+
+
+        // 4. Safe Input Validation
+        // function validateUsername(username) {
+        //     try {
+        //         const usernameRegex = /^[a-zA-Z0-9]{3,10}$/;
+
+        //         if (!usernameRegex.test(username)) {
+        //             throw new Error("Username must be 3-10 characters, letters and numbers only.");
+        //         }
+
+        //         console.log("✅ Username valid:", username);
+
+        //     } catch (err) {
+        //         console.log("", err.message);
+        //     }
+        // }
+
+        // validateUsername("Anjali123"); 
+        // validateUsername("A@#"); 
+
+
+
+        // 5. Debug a Failing test()
+        // const regex = /\d+/g;
+
+        // regex.lastIndex = 0;
+        // console.log(regex.test("123"));
+
+        // regex.lastIndex = 0;
+        // console.log(regex.test("123"));
+
+
+
+        // 6. Extract Numbers from Text (exec)
+        // let text = "No numbers here";
+        // let result = /\d+/.exec(text);
+
+        // console.log(result); 
+
+
+
+
+        // 7. Extract All Numbers (exec + g)
+        // let text = "I have 3 apples, 25 mangoes, and 100 bananas.";
+
+        // let regex = /\d+/g;   
+        // let result;
+        // let numbers = [];
+
+        // while ((result = regex.exec(text)) !== null) {
+        //     numbers.push(result[0]);   
+        // }
+
+        // console.log(numbers);
+
+
+
+
+        // 8. Handle exec() Safely
+
+        // let text = "No numbers here!";
+
+        // let regex = /\d+/g;
+        // let result;
+        // let numbers = [];
+
+        // while ((result = regex.exec(text)) !== null) {
+        //     numbers.push(result[0]);
+        // }
+
+        // if (numbers.length > 0) {
+        //     console.log(numbers);
+        // } else {
+        //     console.log("No numbers found");
+        // }
+
+
+
+        // 11. Form Validation Engine
+
+        // try {
+        //     let result = validateForm({
+        //         email: "test@mail.com",
+        //         phone: "9876543210",
+        //         password: "StrongPass1"
+        //     });
+
+        //     console.log(result);
+
+        // } catch (error) {
+        //     console.error(`${error.name}: ${error.message}`);
+        // }
+
+
+        // 15. Debug Async Validation
+        // function callAPI(data) {
+        //     return new Promise((resolve) => {
+        //         setTimeout(() => {
+        //             resolve("User saved to database ✅");
+        //         }, 1000);
+        //     });
+        // }
+
+
+
+        
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

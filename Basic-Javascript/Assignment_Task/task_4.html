@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <script>
+        // 1. Task: Create an object with name and age.
+        // let person = {
+        //     name: "Anjali",
+        //     age: 22
+        // };
+
+        // console.log(person);
+
+
+        // 2. Task: Access object property using dot notation.
+        // let person = {
+        //     name: "Anjali",
+        //     Age:22
+        //     city:"Ahmedabad"
+        // };
+
+        // console.log(person);
+
+
+        // 3. Task: Access object property using bracket notation.
+        // let person = {
+        //     name: "Anjali",
+        //     age: 22,
+        //     city: "Ahmedabad"
+        // };
+
+        // console.log(person["name"]); 
+        // console.log(person["age"]); 
+        // console.log(person["city"]); 
+
+
+        // 4. Task: Add a new property to an object.
+        // let person = {
+        //     name: "Anjali",
+        //     age: 22
+        // };
+
+        // person.city = "Ahmedeabad";
+
+        // console.log(person);
+
+
+
+        // 5. Task: Delete a property from an object.
+        // let student = {
+        //     name: "Anjali",
+        //     age: 22,
+        //     course: "Frontend"
+        // };
+
+        // delete student.age;
+
+        // console.log(student);
+
+
+
+        // 6. Task: Add property dynamically using variable.
+        // let person = {
+        //     name: "Anjali"
+        //     Age: 22,
+        // };
+
+        // let key = "age";
+
+        // console.log(person);
+
+
+
+        // 7. Task: Create an object method.
+        // let person = {
+        //     name: "Anjali",
+        //     age: 22,
+        //     greet: function () {
+        //         console.log("Hello!");
+        //     }
+        // };
+
+        // person.greet();
+
+
+
+
+        // 8. Task: Call an object method.
+        // let person = {
+        //     name: "Anjali",
+        //     greet() {
+        //         console.log("Hello " + this.name);
+        //     }
+        // };
+
+        // person.greet();
+
+
+        // 9. Task: Use this inside an object method.
+        // let person = {
+        //     name: "Anjali",
+        //     greet() {
+        //         console.log("hello" I'm " + this.name + " and I'm " + this.age + " years old.");
+
+        //     }
+        // };
+
+        // person, greet();
+
+
+
+        //         10. Task: Show implicit binding.
+
+        // let user = {
+        //     name: "Anjali",
+        //     showFn() {
+        //         console.log(this.name);
+        //     }
+        // };
+
+        // user.showFn();
+
+
+
+        //         11. Task: Lose this context.
+        // let showFn = user.show;
+        // showFn();
+
+
+
+
+        //         12. Task: Fix context using call().
+        // showFn.call(user);
+
+
+
+
+
+        //         13. Task: Fix context using apply().
+        // showFn.apply(user);
+
+
+
+        // 14. Task: Fix context using bind().
+        // let fixedFn = showFn.bind(user);
+        // fixedFn(); 
+
+
+
+
+        // 15. Task: Show arrow function this behavior.
+        // let obj = {
+        //     name: "Anjali",
+        //     greet: () => {
+        //         console.log(this.name);
+        //     }
+        // };
+
+        // obj.greet(); 
+
+
+
+
+        // 16. Task: Explain arrow function issue.
+
+
+
+
+        //         17. Task: Loop through object keys.
+        // for (let key in user) {
+        //     console.log(key);
+        // }
+
+        // 18. Task: Get all object keys.
+        // Object.keys(user);
+
+
+        // 19. Task: Get all object values.
+        // Object.values(user);
+
+
+        // 20. Task: Convert object to entries.
+        // Object.entries(user);
+
+
+
+        // 21. Task: Clone an object.
+        // let name = {...user};
+
+
+
+        // 22. Task: Freeze an object.
+        // Object.freeze(user);
+
+
+
+        // 23. Task: Check if property exists.
+
+
+
+        // 24. Task: Destructure object properties.
+        // let { name, age } = user;
+
+
+
+        // 25. Task: Best practice for object methods.
+        // let car = {
+        //     speed: 0,
+        //     drive() {
+        //         this.speed += 10;
+        //     }
+        // };
+
+
+        //  26. Task: Simple if condition.
+        // let age = 18;
+        // if (age >= 18) {
+        //     console.log("Adult");
+        // }
+
+
+
+        // 27. Task: if-else condition.
+        // let num = 5;
+        // if (num % 2 === 0) {
+        //     console.log("Even");
+        // } else {
+        //     console.log("Odd");
+        // }
+
+
+
+
+        // 28. Task: else if condition.
+        // let marks = 75;
+        // if (marks >= 90) {
+        //     console.log("A Grade");
+        // } else if (marks >= 60) {
+        //     console.log("B Grade");
+        // } else {
+        //     console.log("Fail");
+        // }
+
+        // 29. Task: Nested if.
+        // let age = 20;
+        // let hasID = true;
+
+        // if (age >= 18) {
+        //     if (hasID) {
+        //         console.log("Entry allowed");
+        //     }
+        // }
+
+        // 30. Task: Validate empty input.
+
+        // 31. Task: Check truthy value.
+        // let username = "Anjali";
+        // if (username) {
+        //     console.log("Value exists");
+        // }
+
+        // 32. Task: Check falsy value.
+        // let data = null;
+        // if (!data);{
+        //     console.log("Falsy value");
+
+        // }
+
+        // 33. Task: Validate number range.
+
+        // 34. Task: Use logical OR for default.
+        // 35. Task: Use switch statement.
+        // 36. Task: Use default in switch.
+        // switch (day) {
+        //     default: console.log("Invalid day");
+        // }
+
+        // 37. Task: Switch without break (fall-through).
+        // let fruit = "apple";
+        // switch (fruit) {
+        //     case "apple":
+        //     case "mango":
+        //         console.log("Fruit");
+        // }
+
+        // 38. Task: Replace if-else with ternary.
+
+        // let age = 17;
+        // let status = age >= 18 ? "Adult" : "Minor";
+
+        // 39. Task: Nested ternary (not recommended).
+        // let num = 0;
+        // let result = num > 0 ? "Positive" : num < 0 ? "Negative" : "Zero";
+
+        // 40. Task: Guard clause example.
+        // function login(user) {
+        //     if (!user) return "No user";
+        //     return "Welcome";
+        // }
+
+        // 41. Task: Validate password length.
+        // let password = "abc123";
+        // if (password.length >= 6) {
+        //     console.log("Valid password");
+        // }
+
+        // 42. Task: Check multiple conditions.
+
+        // 43. Task: Short-circuit execution.
+        // 44. Task: Convert condition to boolean.
+        // let value = "Hello";
+        // let bool = Boolean(value);
+
+
+        // 45. Task: Compare using strict equality.
+        // 46. Task: Avoid assignment in condition.
+        // 47. Task: Validate email presence.
+        // 48. Task: Check empty array in condition.
+        // let arr = [];
+        // if (arr.length === 0) {
+        //     console.log("Array is empty");
+        // }
+
+        // 49. Task: Conditional return value.
+        // 50. Task: Best practice for conditionals.
+        // Ans:choosing the correct type based on likelihood, ensuring proper tense alignment, and using alternatives for better flow. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

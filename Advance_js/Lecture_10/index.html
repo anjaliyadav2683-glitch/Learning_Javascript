@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <script>
+        //    1. Select an element with id title.
+        //   const title = document.querySelector("#title");
+
+
+        // 2.Select all elements with class item.
+        // items.forEach(item => {
+        //     item.classList.add("active");
+        // });
+
+
+        // 3.Prevent error if element doesn’t exist.
+        // document.querySelector("#btn")?.addEventListener("click", fn);
+
+
+        // 4.Prevent click event from bubbling up.
+        // element.addEventListener("click", (event) => {
+        //     event.stopPropagation();
+        // });
+
+
+        // 5.Attach event listener in capture phase.
+        // element.addEventListener("click", handler, true);
+
+
+        // 6.Which runs first: capturing or bubbling?
+        // Document
+        // ↓ (capturing)
+        // Target element
+        // ↑ (bubbling)
+        // Document
+
+        // 7.Avoid adding click listeners to every list item.
+        // document.querySelector("ul").addEventListener("click", (e) => {
+        //     if (e.target.tagName === "LI") {
+        //         console.log(e.target.textContent);
+        //     }
+        // });
+
+
+        // 8.Handle clicks only on <li> elements.
+        // const list = document.querySelector("ul");
+
+        // list.addEventListener("click", (e) => {
+        //     if (e.target.tagName === "LI") {
+        //         console.log("Clicked:", e.target.textContent);
+        //     }
+        // });
+
+
+        // 9.Which property gives the actual clicked element?
+        // element.addEventListener("click", (event) => {
+        //     console.log(event.target);
+        // });
+
+
+        // 10.Remove a previously added listener.
+        // btn.removeEventListener("click", () => {
+        //     console.log("Button clicked");
+        // });
+
+
+        // 11.Stop form submission reload.
+        // <form id="myForm">
+        //     <button type="submit">Submit</button>
+        // </form>
+
+        // document.getElementById("myForm").addEventListener("submit", function (event) {
+        //     event.preventDefault(); 
+        //     console.log("Form submitted without reload");
+        // });
+
+
+
+        // 12.Optimize scroll event handler.
+
+
+
+
+        // 13.Why are inline handlers discouraged?
+
+
+
+
+        // 14.Which selector is most flexible?
+
+        // document.querySelector("#btn");
+        // document.querySelector(".card.active");
+        // document.querySelector("ul > li:first-child");
+        // document.querySelector('[data-role="admin"]');
+
+
+        // 15.What is the best approach for handling many dynamic elements?
+        // document.querySelector("#list").addEventListener("click", (e) => {
+        //     if (e.target.matches(".item")) {
+        //         console.log("Item clicked:", e.target.textContent);
+        //     }
+        // });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

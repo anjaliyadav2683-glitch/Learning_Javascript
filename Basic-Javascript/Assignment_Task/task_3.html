@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <script>
+        // 1. Task: Create a string and print it.
+        // let message = "Hello, World!";
+        // console.log(message);
+
+        // 2. Task: Find the length of a string.
+        // let text = "Hello World";
+        // let lengthOfString = text.length;
+
+        // console.log(lengthOfString); 
+
+
+        // 3. Task: Convert string to uppercase.
+        // let text = "Hello World "
+        // let upperText = text.toUpperCase();
+
+        // console.log(upperText);
+
+
+        // 4. Task: Convert string to lowercase.
+        // let text = "Hello World"
+        // let lowerText = text.toLocaleUpperCase();
+
+        // console.log(lowerText);
+
+
+        // 5. Task: Extract first 4 characters from a string.
+        // let str = "Javascript";
+
+        // let result = str.slice(0, 4);
+
+        // console.log(result); 
+
+
+        // 6. Task: Replace a word in a string.
+        // let str = "I have";
+
+        // let result = str.replace("have", "have not");
+
+        // console.log(result); 
+
+
+        // 7. Task: Check if string contains a word.
+
+
+        // 8. Task: Concatenate two strings.
+        // let firstName = "Anjali";
+        // let lastName = "Yadav";
+
+        // let fullName = firstName + " " + lastName;
+
+        // console.log(fullName);
+
+
+        // 9. Task: Use template literals to display name and age.
+        // let name = "Anjali"
+        // let age = "23"
+
+        //  console.log(name,age);
+
+
+        // 10. Task: Create a multiline string.
+        // let message = `Hello Anjali,good morning i am learning in framebox `;
+
+        // console.log(message);
+
+
+        // 11. Task: Use escape characters in string.
+        // let text = "She said, \"JavaScript is fun!\"";
+        // console.log(text);
+
+
+
+        // 12. Task: Round a number to nearest integer.
+        // let num = 4.6;
+        // let rounded = Math.round(num);
+
+        // console.log(rounded); 
+
+
+        // 13. Task: Round down a number.
+        // let num = 4.9;
+        // let result = Math.floor(num);
+
+        // console.log(result); 
+
+        // 14. Task: Round up a number.
+        // let num = 4.8;
+        // let result = Math.ceil(num);
+
+        // console.log(result);
+
+
+
+        // 15. Task: Remove decimal part of number.
+        // let num = 4.9;
+        // let result = Math.trunc(num);
+
+        // console.log(result); 
+
+
+        // 16. Task: Find maximum number.
+        // let a = 10;
+        // let b = 20;
+        // let c = 30;
+
+        // let maxNum = Math.max(a, b, c);
+
+        // console.log(maxNum); 
+
+
+        // 17. Task: Find minimum number.
+
+        // let a = 5;
+        // let b = 10;
+        // let c = 15;
+
+        // let minimum = Math.min(a,b,c);
+
+        // console.log(minimum);
+
+
+        // 18. Task: Generate a random number between 0 and 1.
+        // let randomNum = Math.random();
+
+        // console.log(randomNum); 
+
+
+
+        // 19. Task: Generate random number between 1 and 10.
+        // let randomNum = Math.floor(Math.random() * 10) + 1;
+
+        // console.log(randomNum); 
+
+
+
+        // 20. Task: Convert string to integer.
+        // let str = "42";
+        // let num = parseInt(str);
+
+        // console.log(num);      
+        // console.log(typeof num); 
+
+
+
+        // 21. Task: Convert string to float.
+        // let str = "42.56";
+        // let num = parseFloat(str);
+
+        // console.log(num);    
+        // console.log(typeof num); 
+
+
+
+        // 22. Task: Check if value is NaN.
+        // let value = "hello";
+        // console.log(isNaN(value)); 
+
+
+        // 23. Task: Produce Infinity.
+
+        // let positiveInfinity = 1 / 0;
+        // console.log(positiveInfinity); 
+
+        // let negativeInfinity = -1 / 0;
+        // console.log(negativeInfinity); 
+
+
+        // 24. Task: Format number to 2 decimals.
+
+
+        // 25. Task: Repeat a string 3 times.
+        // let str = "Anjali ";
+        // let repeated = str.repeat(3);
+
+        // console.log(repeated); 
+
+
+
+        // 26. Task: Create an array of numbers.
+        // let numbers = [1, 2, 3, 4, 5];
+        // console.log(numbers);     
+        // console.log(typeof numbers); 
+
+
+        // 27. Task: Find array length.
+        // let numbers = [1,2,3,4,5];
+
+        // console.log(numbers,length);
+
+
+
+        // 28. Task: Access first element.
+        // let numbers = [10, 20, 30, 40];
+
+        // let firstElement = numbers[0];
+        // console.log(firstElement); 
+
+
+        // 29. Task: Add element at end.
+        // let numbers = [1, 2, 3];
+
+        // numbers.push(4);
+
+        // console.log(numbers); 
+
+
+        // 30. Task: Remove last element.
+        // let numbers = [1, 2, 3, 4];
+
+        // let removed = numbers.pop();
+
+        // console.log(numbers); 
+        // console.log(removed);
+
+
+        // 31. Task: Remove first element.
+        // let numbers = [1,2,3,4,5];
+
+        // let removed = numbers.shift();
+
+        // console.log(numbers);
+        // console.log(removed);
+
+
+
+        // 32. Task: Add element at beginning.
+        // let fruits = ["apple", "banana", "mango"];
+
+        // fruits.unshift("orange");
+
+        // console.log(fruits);
+
+
+        // 33. Task: Remove 1 element from index 1.
+        // let fruits = ["apple", "banana", "mango", "orange"];
+
+        // fruits.splice(1);
+
+        // console.log(fruits);
+
+
+        // 34. Task: Insert element at index 2.
+        // let fruits = ["apple", "banana", "mango", "orange"];
+
+        // fruits.splice(2, 0, "grapes");
+
+        // console.log(fruits);
+
+
+        // 35. Task: Create a nested array.
+        // let data = [
+        //     ["Anjali", 22],
+        //     ["Rahul", 25],
+        //     ["Sneha", 21]
+        // ];
+
+        // console.log(data);
+
+
+        // 36. Task: Access nested array value.
+        // let data = [
+        //     ["Anjali", 22],
+        //     ["Rahul", 25],
+        //     ["Sneha", 21]
+        // ];
+        // console.log(data[1][0]); 
+        // console.log(data[2][1]);
+
+
+        // 38. Task: Check if any number is even.
+        // let numbers = [1, 3, 7, 8, 5];
+
+        // let hasEven = numbers.some(num => num % 2 === 0);
+
+        // console.log(hasEven);
+
+
+        // 42. Task: Convert array to string.
+        // let fruits = ["apple", "banana", "mango"];
+
+        // let str = fruits.toString();
+
+        // console.log(str);
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1.Store login status so it survives page refresh.
+
+        // localStorage.setItem("isLoggedIn", "true");
+
+        // const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+
+
+        // 2.Retrieve stored boolean value.
+        // const status = JSON.parse(localStorage.getItem("isLoggedIn"));
+
+
+        // 3.Store language and theme preferences.
+
+        // const prefs = { lang: "en", theme: "dark" };
+
+        // localStorage.setItem("prefs", JSON.stringify(prefs));
+
+        // const savedPrefs = JSON.parse(localStorage.getItem("prefs"));
+
+
+        // 4.Retrieve preferences without crashing.
+        // const prefs = JSON.parse(localStorage.getItem("prefs")) ?? {
+        //     lang: "en",
+        //     theme: "light"
+        // };
+
+
+        // 5.Store OTP that clears when tab closes.
+
+        // sessionStorage.setItem("otp", "123456");
+
+        // const otp = sessionStorage.getItem("otp");
+
+        // sessionStorage.removeItem("otp");
+
+
+        // 6.OTP stored in localStorage. Why is this wrong?
+
+
+
+        // 7.Clear all user-related storage on logout.
+        // localStorage.clear();
+        // sessionStorage.clear();
+
+
+        // 8.Update stored theme only.
+        // const updated = { ...prefs, theme: "dark" };
+        // localStorage.setItem("prefs", JSON.stringify(updated));
+
+
+        // 9.Ensure browser supports localStorage.
+        // function storageAvailable() {
+        //     try {
+        //         const test = "__test__";
+        //         localStorage.setItem(test, test);
+        //         localStorage.removeItem(test);
+        //         return true;
+        //     } catch {
+        //         return false;
+        //     }
+        // }
+
+        // if (storageAvailable()) {
+        // }
+
+
+
+        // 10.Store cart items.
+        // const cart = [1, 2, 3];
+
+        // localStorage.setItem("cart", JSON.stringify(cart));
+
+        // const savedCart = JSON.parse(localStorage.getItem("cart")) ?? [];
+
+
+        // 11.Convert stored cart back to array.
+        // const cart = JSON.parse(localStorage.getItem("cart")) ?? [];
+
+
+        // 12.Prevent error when key doesn’t exist.
+        // let data;
+
+        // try {
+        //     data = JSON.parse(localStorage.getItem("data"));
+        // } catch {
+        //     data = null;
+        // }
+
+        // data ??= {};
+
+
+        // 13.Where should form draft data be stored?
+
+
+
+
+        // 14.Log number of items in storage.
+        // console.log(localStorage.length);
+
+
+        // 15.What must always be done before storing objects?
+        // localStorage.setItem("data", JSON.stringify(obj));
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
