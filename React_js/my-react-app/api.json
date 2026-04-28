@@ -1,0 +1,25 @@
+{
+    "user": [
+    {
+      "id": "1",
+      "name": "Anjali",
+      "password": "Anjali@123",
+      "email": "Anjali@gmail.com",
+      "rol": 1
+    },
+    {
+      "id": "3",
+      "name": "Raj",
+      "password": "Raj@2826",
+      "email": "Raj@gmail.com",
+      "rol": 2  
+    },
+    {
+       "id": "3",
+      "name": "Khushi",
+      "password": "Khushi@2008",
+      "email": "Khushi@gmail.com",
+      "rol": 3 
+    }
+]
+}
